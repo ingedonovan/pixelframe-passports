@@ -25,16 +25,21 @@
             const photoDosage = window[photoCode].dosage;
             const photoConcrete = window[photoCode].concrete;
             const photoConfigurations = window[photoCode].configurations;
+            const photoDate = window[photoCode].date;
+            const photoQuality = window[photoCode].quality;
+
 
             document.getElementById("left").innerHTML = `<div style="background-image: url(${photoImage}); background-size: contain; width: min(30vw, 70vh); aspect-ratio: 1;">
             </div>`;
             document.getElementById("right").innerHTML = `
             <h1>${photoName}</h1>
             <h3>${photoGeneration}</h3>
+            <h3>${photoDate}</h3>
             <h3>${photoFc}</h3>
             <h3>${photoDosage}</h3>
             <h3>${photoConcrete}</h3>
             <h3>${photoFiber}</h3>
+            <h3>${photoQuality}</h3>
             `;
         }))
         </script>
